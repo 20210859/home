@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for 명령문</title>
+    <script>
+        var gugudan = function(dan){
+            document.write('<p>' + dan + '단</p>');
+            for(var i = 1; i <= 9; i++){
+                document.write(dan + ' * ' + i + ' = ' +(dan*i) + '<br>');
+            }
+        }
+    </script>
+</head>
+<body>
+<h2>구구단</h2>
+<hr>
+<script>
+    var dan = prompt('몇 단 : ');
+    gugudan(dan);
+</script>
+</body>
+</html>

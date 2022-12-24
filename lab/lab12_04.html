@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax 예제</title>
+    <script>
+        function get_data(data_src, div_id) {
+            var myXMLHttpRequest = new XMLHttpRequest();
+            var obj = document.getElementById(div_id);
+
+            myXMLHttpRequest.onreadystatechange = function () {
+                if (myXMLHttpRequest.readyState == 4 && myXMLHttpRequest.status == 200)
+                    obj.innerHTML = myXMLHttpRequest.responseText;
+            };
+            myXMLHttpRequest.open("GET", data_src);
+            myXMLHttpRequest.send(null);
+        };
+    </script>
+</head>
+<body>
+<h1>Fetching Data with Ajax</h1>
+<form>
+    <input type="button" value="Display data" onclick="get_data('data/pop.txt', 'target_div')">
+
+</form>
+
+<div id="target_div"><p>The fetched data will go here. </p></div>
+</body>
+</html>

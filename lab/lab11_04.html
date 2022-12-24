@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>함수의 매개변수 기본값 처리</title>
+    <script>
+        var order_pizza = function (topping){
+            if (topping == undefined)
+                topping  = '치즈';
+            document.write('<p> 토핑이 ' + topping + '인 피자를 주문하셨습니다.');
+        }
+    </script>
+</head>
+<body>
+<h2>피자 주문</h2> <hr>
+<script>
+  var topping = prompt('어떤 토핑을 원하세요? : ');
+  order_pizza();
+</script>
+</body>
+</html>

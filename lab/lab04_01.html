@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>기본 테이블 만들기</title>
+    <style>
+        table{
+            border: 1px solid black;
+            /*border-collapse: collapse;*/
+        }
+        th, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <caption>1900 ~ 1903 개체수의 추이</caption>
+    <thead>
+    <tr> <th>년도</th> <th>토끼</th> <th>시라소니</th> <th>당근</th></tr>
+    </thead>
+
+    <tbody>
+    <tr> <td>1900</td> <td>30,000</td> <td>4,000</td> <td>48,300</td></tr>
+    <tr> <td>1901</td> <td>47,200</td> <td>6,100</td> <td>48,200</td></tr>
+    <tr> <td>1902</td> <td>70,200</td> <td>9,800</td> <td>41,500</td></tr>
+    <tr> <td>1903</td> <td>77,400</td> <td>35,200</td> <td> 38,200</td></tr>
+    </tbody>
+
+    <tfoot>
+    <tr> <td>합계</td> <td>224,000</td> <td>55,100</td> <td>176,200</td></tr>
+    </tfoot>
+</table>
+</body>
+</html>

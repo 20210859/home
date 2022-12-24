@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>동적 HTML 문서</title>
+</head>
+<script>
+    var win = null;
+    function show_HTML() {
+        if (win == null || win.closed)
+            win = window.open("", "out_win", width=400, height=300);
+
+        var text = document.getElementById("src_code").value;
+        win.document.open();
+        win.document.write(text);
+        win.document.close();
+    }
+</script>
+<body>
+<h1>HTML 문서 편집기</h1>
+<p>다음의 편집기에서 HTML 문서를 작성한 후 보기 버튼을 클릭하세요.</p>
+<textarea id = "src_code", rows="20" cols="80"></textarea><br>
+<input type="button" value="보기" onclick="show_HTML()">
+</body>
+</html>

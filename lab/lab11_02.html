@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if 조건문</title>
+    <script>
+        function get_grade(score) {
+            var grade;
+            if (score >= 90)
+                grade = 'A';
+            else if (score >= 80)
+                grade = 'B';
+            else if (score >= 70)
+                grade = 'C';
+            else if (score >= 60)
+                grade = 'D';
+            else
+                grade = 'F';
+
+            return grade;
+        }
+        function get_price(fruit){
+            var price = 0;
+            switch(fruit) {
+                case '바나나' : price = 200;
+                break;
+                case '사과' : price = 300;
+                break;
+                case '체리' : price = 400;
+                break;
+                default : price = 0;
+                    document.write('<p>' + fruit + '는 취급하지 않습니다. </p>');
+            }
+
+            if (fruit == '바나나')
+                price = 200;
+            else if (fruit == '사과')
+                price = 300;
+            else if (fruit == '체리')
+                price = 400;
+            else {
+                price = 0;
+                document.write('<p>' + fruit + '는 취급하지 않습니다. </p>');
+            }
+            return price;
+        }
+    </script>
+</head>
+<body>
+<h2>성적에 따른 학점</h2>
+<hr>
+    <script>
+        var score = prompt('점수를 입력하세요: ', 0);
+        var grade = get_grade(score);
+
+        console.log(score + '--->' + grade);
+        document.write('<p>점수 : ' + score + '--->' + grade + '</p>');
+
+        var my_fruit = prompt('구매하고자 하는 과일은? : ');
+        var price = get_price(my_fruit);
+        document.write('<p> 과일 ' + my_fruit + '의 가격은 ' + price + '입니다</p>');
+
+</script>
+</body>
+</html>

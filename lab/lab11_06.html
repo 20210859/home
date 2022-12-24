@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array 내장 객체</title>
+    <script>
+        function plot(data) {
+            document.write('<p>' + data + '</p>');
+            for (var i = 0; i < data.length; i++){
+                var size = data[i];
+                while (size>0){
+                    document.write("*");
+                    size--;
+                }
+                document.write(data[i] + "<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+<h2>그래프 그리기</h2>
+<hr>
+<script>
+    var plots_data = [20, 5, 8, 15, 18];
+    var data2 = [5, 2];
+    //plot(plots_data);
+
+    var x = plots_data.concat(data2);
+    document.write('<p>' + x + '</p>');
+
+    var y = plots_data.reverse();
+    document.write('<p>' + y + '</p>');
+
+    plots_data.sort();
+    document.write('<p>' + plots_data + '</p>');
+</script>
+</body>
+</html>

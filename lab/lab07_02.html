@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>기본 테이블 만들기</title>
+    <style>
+        table{
+            border: 0px solid black;
+            border-collapse: collapse;
+        }
+        th, td{
+            /*border: 1px dotted green;*/
+            height : 25px;
+            width : 100px;
+            text-align: right;
+            padding : 10px;
+            border-bottom : 1px solid gray;
+        }
+        thead th {
+            text-align: center;
+        }
+        tbody tr:nth-child(even) {
+            background-color: lightcyan;
+        }
+        tbody tr:hover {
+            background-color: lightpink;
+        }
+        .t1 {
+            text-align: center;
+        }
+        thead{
+            background-color: darkgray;
+            color : white;
+        }
+
+    </style>
+</head>
+<body>
+<table>
+    <caption>1900 ~ 1903 개체수의 추이</caption>
+    <thead>
+    <tr> <th>년도</th> <th>토끼</th> <th>시라소니</th> <th>당근</th></tr>
+    </thead>
+
+    <tbody>
+    <tr> <td class = "t1">1900</td> <td>30,000</td> <td>4,000</td> <td>48,300</td></tr>
+    <tr> <td class = "t1">1901</td> <td>47,200</td> <td>6,100</td> <td>48,200</td></tr>
+    <tr> <td class = "t1">1902</td> <td>70,200</td> <td>9,800</td> <td>41,500</td></tr>
+    <tr> <td class = "t1">1903</td> <td>77,400</td> <td>35,200</td> <th> 38,200</th></tr>
+    </tbody>
+
+    <tfoot>
+    <tr> <th class = "t1">합계</th> <th>224,000</th> <th>55,100</th> <th>176,200</th></tr>
+    </tfoot>
+</table>
+</body>
+</html>

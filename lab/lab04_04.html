@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>텍스트 입력 요소 연습</title>
+</head>
+<body>
+<h2>자기 소개서 작성</h2>
+<hr>
+<form>
+  이름: <input type="text" name ="user_name" size="6"> <br>
+  암호: <input type="password" name="pwd" size = "10"> <br>
+  자소서: <textarea name ="description" cols="40" rows="6">자기 소개를 해 주세요.</textarea> <br>
+  출신국: <input type="text" size="14" name="home_country" list="countries">
+        <datalist id ="countries">
+            <option value="대한민국"></option>
+            <option value="미국"></option>
+            <option value="중국"></option>
+            <option value="기타"></option>
+        </datalist>
+
+</form>
+</body>
+</html>

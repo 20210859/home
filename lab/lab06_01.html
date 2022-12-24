@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>태그 이름 선택자</title>
+    <style>
+        h3, ul.blue {
+            color:blue;
+        }
+        #lab {
+            color: red;
+        }
+        #ss {
+            background-color: lightcyan;
+        }
+        ul strong {
+            color: red;
+        }
+        div.blue {
+            background-color: yellowgreen;
+        }
+        header > ul{
+            list-style: none;
+        }
+        a:link, a:visited{
+            text-decoration: none;
+            background-color: lightgreen;
+            display: block;
+            width: 120px;
+            border: 1px solid green;
+            margin-bottom: 2px;
+            text-align: center;
+            color: black;
+        }
+        a:hover, a:active {
+            background-color: lightcoral;
+            color : blue;
+        }
+    </style>
+</head>
+<body>
+<h3>Web Programming</h3>
+<hr>
+<header>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/lectures/lect_notes.html">Lecture Notes</a></li>
+        <li><a href="/reports/report.html">Reports</a></li>
+        <li><a href="/qna/qna.html">Q&amp;A</a></li>
+    </ul>
+</header>
+<div class="blue">학습 내용</div>
+<ul class="blue">
+    <li>HTML5</li>
+    <li><strong>CSS</strong></li>
+    <li>Javascript</li>
+</ul>
+
+<div id="lab">실습</div>
+<ul id="ss">
+    <li>인라인 스타일시트</li>
+    <li>내부 스타일 시트</li>
+    <li>외부 스타일 시트</li>
+</ul>
+</body>
+</html>

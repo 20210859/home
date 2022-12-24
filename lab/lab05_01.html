@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>폼 입력 요소</title>
+</head>
+<body>
+<h2>폼 입력 요소 연습</h2>
+<hr>
+<form>
+    검색: <input type = "text" size="10">
+        <input type="button" value="버튼 1">
+        <button type="button">버튼 2</button><br>
+    <p>
+    먹고 싶은 음식 선택 : <br>
+    <input type = "radio", name = "food", value="f1">짜장면
+    <input type = "radio", name = "food", value="f2" checked>짬뽕
+    <input type="radio", name = "food", value="f3">탕수육
+    </p>
+
+    보유 IT 기술: <br>
+    <input type ="checkbox" name="p1" value="python" checked>python
+    <input type="checkbox" name="p2" value="java">java
+    <input type="checkbox" name="p3" value="javascript">javascript
+
+    <p>
+    가장 가고 싶은 여행지 :
+        <select name="trip" size="2">
+            <option value="france">프랑스</option>
+            <option value="hawaii" selected>하와이</option>
+            <option value="roma">로마</option>
+        </select>
+    </p>
+
+    <button type="submit"><img src="images/ElvisPresley.jpg" width="200px"></button>
+    <input type="reset" value="재입력">
+</form>
+</body>
+</html>
